@@ -2,12 +2,11 @@ import requests
 
 url = "http://192.168.10.90/nuova"
 
-payload = "<configConfMos\ncookie=\"1541770998/603c4b55-338c-4e6f-add0-762ab4b3c983\"\ninHierarchical=\"false\">\n    <inConfigs>\n<pair key=\"fabric/lan/net-finance\">\n    <fabricVlan\n    compressionType=\"included\"\n    defaultNet=\"no\"\n    id=\"41\"\n    mcastPolicyName=\"\"\n    name=\"finance\"\n    policyOwner=\"local\"\n    pubNwName=\"\"\n    sharing=\"none\"\n    dn=\"fabric/lan/net-finance\"\n    \n    status=\"created\"\n    \n    sacl=\"addchild,del,mod\">\n    </fabricVlan>\n</pair>\n    </inConfigs>\n</configConfMos>\n"
 headers = {
     'Content-Type': "text/xml",
     'Authorization': "Basic Y2lzY286Y2lzY28="
     }
-
+payload = "<configConfMos\ncookie=\"1541770998/603c4b55-338c-4e6f-add0-762ab4b3c983\"\ninHierarchical=\"false\">\n    <inConfigs>\n<pair key=\"fabric/lan/net-finance\">\n    <fabricVlan\n    compressionType=\"included\"\n    defaultNet=\"no\"\n    id=\"41\"\n    mcastPolicyName=\"\"\n    name=\"finance\"\n    policyOwner=\"local\"\n    pubNwName=\"\"\n    sharing=\"none\"\n    dn=\"fabric/lan/net-finance\"\n    \n    status=\"created\"\n    \n    sacl=\"addchild,del,mod\">\n    </fabricVlan>\n</pair>\n    </inConfigs>\n</configConfMos>\n"
 response = requests.request("POST", url, data=payload, headers=headers)
 print(response.text)
 
