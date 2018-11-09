@@ -1,0 +1,3181 @@
+{
+	"info": {
+		"_postman_id": "270a3478-e21f-4468-bab0-03a9271d1609",
+		"name": "Python for Cisco Class Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://192.168.10.90/nuova",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<configConfMos\ncookie=\"1541770998/603c4b55-338c-4e6f-add0-762ab4b3c983\"\ninHierarchical=\"false\">\n    <inConfigs>\n<pair key=\"org-root/ls-Linuxx\">\n    <lsServer\n    name=\"Linuxx\"\n    dn=\"org-root/ls-Linuxx\"\n    \n    status=\"created\"\n    \n    sacl=\"addchild,del,mod\">\n        <vnicEther\n        adaptorProfileName=\"\"\n        addr=\"derived\"\n        adminCdnName=\"\"\n        adminHostPort=\"ANY\"\n        adminVcon=\"any\"\n        cdnPropInSync=\"yes\"\n        cdnSource=\"vnic-name\"\n        identPoolName=\"\"\n        mtu=\"1500\"\n        name=\"eth0\"\n        nwCtrlPolicyName=\"\"\n        nwTemplName=\"\"\n        order=\"unspecified\"\n        pinToGroupName=\"\"\n        qosPolicyName=\"\"\n        statsPolicyName=\"default\"\n        switchId=\"A\"\n        \n        rn=\"ether-eth0\"\n        status=\"created\"\n        \n        sacl=\"addchild,del,mod\">\n            <vnicEtherIf\n            defaultNet=\"yes\"\n            name=\"financex\"\n            \n            rn=\"if-financex\"\n            \n            \n            sacl=\"addchild,del,mod\">\n            </vnicEtherIf>\n        </vnicEther>\n        <vnicEther\n        adaptorProfileName=\"\"\n        addr=\"derived\"\n        adminCdnName=\"\"\n        adminHostPort=\"ANY\"\n        adminVcon=\"any\"\n        cdnPropInSync=\"yes\"\n        cdnSource=\"vnic-name\"\n        identPoolName=\"\"\n        mtu=\"1500\"\n        name=\"eth1\"\n        nwCtrlPolicyName=\"\"\n        nwTemplName=\"\"\n        order=\"unspecified\"\n        pinToGroupName=\"\"\n        qosPolicyName=\"\"\n        statsPolicyName=\"default\"\n        switchId=\"B\"\n        \n        rn=\"ether-eth1\"\n        status=\"created\"\n        \n        sacl=\"addchild,del,mod\">\n            <vnicEtherIf\n            defaultNet=\"yes\"\n            name=\"financex\"\n            \n            rn=\"if-financex\"\n            \n            \n            sacl=\"addchild,del,mod\">\n            </vnicEtherIf>\n        </vnicEther>\n        <vnicFc\n        adaptorProfileName=\"\"\n        addr=\"derived\"\n        adminCdnName=\"\"\n        adminHostPort=\"ANY\"\n        adminVcon=\"any\"\n        cdnPropInSync=\"yes\"\n        cdnSource=\"vnic-name\"\n        identPoolName=\"\"\n        maxDataFieldSize=\"2048\"\n        name=\"fc0\"\n        nwTemplName=\"\"\n        order=\"unspecified\"\n        persBind=\"disabled\"\n        persBindClear=\"no\"\n        pinToGroupName=\"\"\n        qosPolicyName=\"\"\n        statsPolicyName=\"default\"\n        switchId=\"A\"\n        \n        rn=\"fc-fc0\"\n        status=\"created\"\n        \n        sacl=\"addchild,del,mod\">\n        </vnicFc>\n        <vnicFc\n        adaptorProfileName=\"\"\n        addr=\"derived\"\n        adminCdnName=\"\"\n        adminHostPort=\"ANY\"\n        adminVcon=\"any\"\n        cdnPropInSync=\"yes\"\n        cdnSource=\"vnic-name\"\n        identPoolName=\"\"\n        maxDataFieldSize=\"2048\"\n        name=\"fc1\"\n        nwTemplName=\"\"\n        order=\"unspecified\"\n        persBind=\"disabled\"\n        persBindClear=\"no\"\n        pinToGroupName=\"\"\n        qosPolicyName=\"\"\n        statsPolicyName=\"default\"\n        switchId=\"B\"\n        \n        rn=\"fc-fc1\"\n        status=\"created\"\n        \n        sacl=\"addchild,del,mod\">\n        </vnicFc>\n        <lsbootDef\n        \n        rn=\"boot-policy\"\n        \n        \n        sacl=\"addchild,del,mod\">\n            <lsbootStorage\n            order=\"1\"\n            \n            rn=\"storage\"\n            \n            \n            sacl=\"addchild,del,mod\">\n                <lsbootLocalStorage\n                \n                rn=\"local-storage\"\n                \n                \n                sacl=\"addchild,del,mod\">\n                    <lsbootDefaultLocalImage\n                    order=\"1\"\n                    \n                    rn=\"local-any\"\n                    \n                    \n                    sacl=\"addchild,del,mod\">\n                    </lsbootDefaultLocalImage>\n                </lsbootLocalStorage>\n            </lsbootStorage>\n        </lsbootDef>\n        <vnicFcNode\n        addr=\"pool-derived\"\n        identPoolName=\"\"\n        \n        rn=\"fc-node\"\n        \n        \n        sacl=\"addchild,del,mod\">\n        </vnicFcNode>\n    </lsServer>\n</pair>\n    </inConfigs>\n</configConfMos>"
+				},
+				"url": {
+					"raw": "http://192.168.10.90/nuova",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"90"
+					],
+					"path": [
+						"nuova"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.90/nuova",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<configConfMos\ncookie=\"1541770998/603c4b55-338c-4e6f-add0-762ab4b3c983\"\ninHierarchical=\"false\">\n    <inConfigs>\n<pair key=\"fabric/lan/net-finance\">\n    <fabricVlan\n    compressionType=\"included\"\n    defaultNet=\"no\"\n    id=\"111\"\n    mcastPolicyName=\"\"\n    name=\"finance\"\n    policyOwner=\"local\"\n    pubNwName=\"\"\n    sharing=\"none\"\n    dn=\"fabric/lan/net-finance\"\n    \n    status=\"created\"\n    \n    sacl=\"addchild,del,mod\">\n    </fabricVlan>\n</pair>\n    </inConfigs>\n</configConfMos>\n"
+				},
+				"url": {
+					"raw": "http://192.168.10.90/nuova",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"90"
+					],
+					"path": [
+						"nuova"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.90/nuova",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<configConfMos\ncookie=\"1541770998/603c4b55-338c-4e6f-add0-762ab4b3c983\"\ninHierarchical=\"false\">\n    <inConfigs>\n<pair key=\"fabric/lan/net-finance\">\n    <fabricVlan\n    compressionType=\"included\"\n    defaultNet=\"no\"\n    id=\"111\"\n    mcastPolicyName=\"\"\n    name=\"finance\"\n    policyOwner=\"local\"\n    pubNwName=\"\"\n    sharing=\"none\"\n    dn=\"fabric/lan/net-finance\"\n    \n    status=\"created\"\n    \n    sacl=\"addchild,del,mod\">\n    </fabricVlan>\n</pair>\n    </inConfigs>\n</configConfMos>\n\n<configConfMos\ncookie=\"1541770998/603c4b55-338c-4e6f-add0-762ab4b3c983\"\ninHierarchical=\"false\">\n    <inConfigs>\n<pair key=\"org-root/ls-Linuxx\">\n    <lsServer\n    name=\"Linuxx\"\n    dn=\"org-root/ls-Linuxx\"\n    \n    status=\"created\"\n    \n    sacl=\"addchild,del,mod\">\n        <vnicEther\n        adaptorProfileName=\"\"\n        addr=\"derived\"\n        adminCdnName=\"\"\n        adminHostPort=\"ANY\"\n        adminVcon=\"any\"\n        cdnPropInSync=\"yes\"\n        cdnSource=\"vnic-name\"\n        identPoolName=\"\"\n        mtu=\"1500\"\n        name=\"eth0\"\n        nwCtrlPolicyName=\"\"\n        nwTemplName=\"\"\n        order=\"unspecified\"\n        pinToGroupName=\"\"\n        qosPolicyName=\"\"\n        statsPolicyName=\"default\"\n        switchId=\"A\"\n        \n        rn=\"ether-eth0\"\n        status=\"created\"\n        \n        sacl=\"addchild,del,mod\">\n            <vnicEtherIf\n            defaultNet=\"yes\"\n            name=\"finance\"\n            \n            rn=\"if-finance\"\n            \n            \n            sacl=\"addchild,del,mod\">\n            </vnicEtherIf>\n        </vnicEther>\n        <vnicEther\n        adaptorProfileName=\"\"\n        addr=\"derived\"\n        adminCdnName=\"\"\n        adminHostPort=\"ANY\"\n        adminVcon=\"any\"\n        cdnPropInSync=\"yes\"\n        cdnSource=\"vnic-name\"\n        identPoolName=\"\"\n        mtu=\"1500\"\n        name=\"eth1\"\n        nwCtrlPolicyName=\"\"\n        nwTemplName=\"\"\n        order=\"unspecified\"\n        pinToGroupName=\"\"\n        qosPolicyName=\"\"\n        statsPolicyName=\"default\"\n        switchId=\"B\"\n        \n        rn=\"ether-eth1\"\n        status=\"created\"\n        \n        sacl=\"addchild,del,mod\">\n            <vnicEtherIf\n            defaultNet=\"yes\"\n            name=\"finance\"\n            \n            rn=\"if-finance\"\n            \n            \n            sacl=\"addchild,del,mod\">\n            </vnicEtherIf>\n        </vnicEther>\n        <vnicFc\n        adaptorProfileName=\"\"\n        addr=\"derived\"\n        adminCdnName=\"\"\n        adminHostPort=\"ANY\"\n        adminVcon=\"any\"\n        cdnPropInSync=\"yes\"\n        cdnSource=\"vnic-name\"\n        identPoolName=\"\"\n        maxDataFieldSize=\"2048\"\n        name=\"fc0\"\n        nwTemplName=\"\"\n        order=\"unspecified\"\n        persBind=\"disabled\"\n        persBindClear=\"no\"\n        pinToGroupName=\"\"\n        qosPolicyName=\"\"\n        statsPolicyName=\"default\"\n        switchId=\"A\"\n        \n        rn=\"fc-fc0\"\n        status=\"created\"\n        \n        sacl=\"addchild,del,mod\">\n        </vnicFc>\n        <vnicFc\n        adaptorProfileName=\"\"\n        addr=\"derived\"\n        adminCdnName=\"\"\n        adminHostPort=\"ANY\"\n        adminVcon=\"any\"\n        cdnPropInSync=\"yes\"\n        cdnSource=\"vnic-name\"\n        identPoolName=\"\"\n        maxDataFieldSize=\"2048\"\n        name=\"fc1\"\n        nwTemplName=\"\"\n        order=\"unspecified\"\n        persBind=\"disabled\"\n        persBindClear=\"no\"\n        pinToGroupName=\"\"\n        qosPolicyName=\"\"\n        statsPolicyName=\"default\"\n        switchId=\"B\"\n        \n        rn=\"fc-fc1\"\n        status=\"created\"\n        \n        sacl=\"addchild,del,mod\">\n        </vnicFc>\n        <lsbootDef\n        \n        rn=\"boot-policy\"\n        \n        \n        sacl=\"addchild,del,mod\">\n            <lsbootStorage\n            order=\"1\"\n            \n            rn=\"storage\"\n            \n            \n            sacl=\"addchild,del,mod\">\n                <lsbootLocalStorage\n                \n                rn=\"local-storage\"\n                \n                \n                sacl=\"addchild,del,mod\">\n                    <lsbootDefaultLocalImage\n                    order=\"1\"\n                    \n                    rn=\"local-any\"\n                    \n                    \n                    sacl=\"addchild,del,mod\">\n                    </lsbootDefaultLocalImage>\n                </lsbootLocalStorage>\n            </lsbootStorage>\n        </lsbootDef>\n        <vnicFcNode\n        addr=\"pool-derived\"\n        identPoolName=\"\"\n        \n        rn=\"fc-node\"\n        \n        \n        sacl=\"addchild,del,mod\">\n        </vnicFcNode>\n    </lsServer>\n</pair>\n    </inConfigs>\n</configConfMos>"
+				},
+				"url": {
+					"raw": "http://192.168.10.90/nuova",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"90"
+					],
+					"path": [
+						"nuova"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.90/nuova",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<configConfMos\ncookie=\"1541770998/603c4b55-338c-4e6f-add0-762ab4b3c983\"\ninHierarchical=\"false\">\n    <inConfigs>\n<pair key=\"fabric/lan/net-finance\">\n    <fabricVlan\n    compressionType=\"included\"\n    defaultNet=\"no\"\n    id=\"111\"\n    mcastPolicyName=\"\"\n    name=\"finance\"\n    policyOwner=\"local\"\n    pubNwName=\"\"\n    sharing=\"none\"\n    dn=\"fabric/lan/net-finance\"\n    \n    status=\"created\"\n    \n    sacl=\"addchild,del,mod\">\n    </fabricVlan>\n</pair>\n    </inConfigs>\n</configConfMos>\n"
+				},
+				"url": {
+					"raw": "http://192.168.10.90/nuova",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"90"
+					],
+					"path": [
+						"nuova"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.90/nuova",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<configConfMos\ncookie=\"1541770397/0e537936-565e-4fb8-b4ce-a0c15fcfdc8c\"\ninHierarchical=\"false\">\n    <inConfigs>\n<pair key=\"org-root/org-PythonMaster\">\n    <orgOrg\n    name=\"PythonMaster\"\n    dn=\"org-root/org-PythonMaster\"\n    \n    status=\"created\"\n    \n    sacl=\"addchild,del,mod\">\n    </orgOrg>\n</pair>\n    </inConfigs>\n</configConfMos>\n"
+				},
+				"url": {
+					"raw": "http://192.168.10.90/nuova",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"90"
+					],
+					"path": [
+						"nuova"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.90/nuova",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<configResolveDn cookie=\"null\" inHierarchical=\"false\" dn=\"sys/chassis-6\"/>"
+				},
+				"url": {
+					"raw": "http://192.168.10.90/nuova",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"90"
+					],
+					"path": [
+						"nuova"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.90/nuova",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/xml",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<aaaLogin inName=\"cisco\" inPassword=\"cisco\"/>"
+				},
+				"url": {
+					"raw": "http://192.168.10.90/nuova",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"90"
+					],
+					"path": [
+						"nuova"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.1/api/aaaLogin.json",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ciscoapic",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"aaaUser\": {\r\n\t\t\"attributes\": {\r\n\t\t\t\"name\": \"admin\",\r\n\t\t\t\"pwd\": \"ciscoapic\"\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.1/api/aaaLogin.json",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"aaaLogin.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.1/api/aaaLogin.json",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ciscoapic",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://192.168.10.1/api/aaaLogin.json",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"aaaLogin.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.1/api/aaaLogin.json",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"aaaUser\": {\r\n\t\t\"attributes\": {\r\n\t\t\t\"name\": \"admin\",\r\n\t\t\t\"pwd\": \"ciscoapic\"\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.1/api/aaaLogin.json",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"aaaLogin.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.1/api/node/mo/uni/tn-testtenant.json",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"fvTenant\": {\r\n\t\t\"attributes\": {\r\n\t\t\t\"dn\": \"uni/tn-testtenant\",\r\n\t\t\t\"name\": \"testtenant\",\r\n\t\t\t\"rn\": \"tn-testtenant\",\r\n\t\t\t\"status\": \"created\"\r\n\t\t},\r\n\t\t\"children\": []\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.10.1/api/node/mo/uni/tn-testtenant.json",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"node",
+						"mo",
+						"uni",
+						"tn-testtenant.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.1/api/node/mo/uni/tn-testtenant.json",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"fvTenant\": {\r\n\t\t\"attributes\": {\r\n\t\t\t\"dn\": \"uni/tn-testtenant\",\r\n\t\t\t\"name\": \"testtenant\",\r\n\t\t\t\"rn\": \"tn-testtenant\",\r\n\t\t\t\"status\": \"created\"\r\n\t\t},\r\n\t\t\"children\": []\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.10.1/api/node/mo/uni/tn-testtenant.json",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"node",
+						"mo",
+						"uni",
+						"tn-testtenant.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.1/api/aaaLogin.json",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"aaaUser\": {\r\n\t\t\"attributes\": {\r\n\t\t\t\"name\": \"admin\",\r\n\t\t\t\"pwd\": \"ciscoapic\"\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.1/api/aaaLogin.json",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"aaaLogin.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.1/api/aaaLogin.json",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"aaaUser\": {\r\n\t\t\"attributes\": {\r\n\t\t\t\"name\": \"admin\",\r\n\t\t\t\"pwd\": \"ciscoapic\"\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.1/api/aaaLogin.json",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"aaaLogin.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.1/api/aaaLogin.json",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"aaaUser\": {\r\n\t\t\"attributes\": {\r\n\t\t\t\"name\": \"admin\",\r\n\t\t\t\"pwd\": \"ciscoapic\"\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.10.1/api/aaaLogin.json",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"aaaLogin.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.1/api/aaaLogin.json",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"aaauser\": {\r\n\t\t\"attributes\": {\r\n\t\t\t\"name\": \"admin\",\r\n\t\t\t\"pwd\": \"ciscoapic\"\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.10.1/api/aaaLogin.json",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"aaaLogin.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.1/api/aaaLogin.json",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://192.168.10.1/api/aaaLogin.json",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"aaaLogin.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.1/api/aaaLogin.json",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ned:route\": {\r\n        \"ip-route-interface-forwarding-list\": [\r\n            {\r\n                \"prefix\": \"216.48.1.0\",\r\n                \"mask\": \"255.255.255.0\",\r\n                \"fwd-list\": [\r\n                    {\r\n                        \"fwd\": \"10.1.1.1\"\r\n                    }\r\n                ]\r\n            }\r\n\t\t],\r\n        \"static\": {}\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.10.1/api/aaaLogin.json",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"aaaLogin.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.1/api/aaaLogin.json",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ned:route\": {\r\n        \"ip-route-interface-forwarding-list\": [\r\n            {\r\n                \"prefix\": \"216.48.1.0\",\r\n                \"mask\": \"255.255.255.0\",\r\n                \"fwd-list\": [\r\n                    {\r\n                        \"fwd\": \"10.1.1.1\"\r\n                    }\r\n                ]\r\n            }\r\n\t\t],\r\n        \"static\": {}\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.10.1/api/aaaLogin.json",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"1"
+					],
+					"path": [
+						"api",
+						"aaaLogin.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/ip/route",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ned:route\": {\r\n        \"ip-route-interface-forwarding-list\": [\r\n            {\r\n                \"prefix\": \"216.48.1.0\",\r\n                \"mask\": \"255.255.255.0\",\r\n                \"fwd-list\": [\r\n                    {\r\n                        \"fwd\": \"10.1.1.1\"\r\n                    }\r\n                ]\r\n            }\r\n\t\t],\r\n        \"static\": {}\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/ip/route",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"ip",
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/ip/route",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ned:route\": {\r\n        \"ip-route-interface-forwarding-list\": [\r\n            {\r\n                \"prefix\": \"216.48.1.0\",\r\n                \"mask\": \"255.255.255.0\",\r\n                \"fwd-list\": [\r\n                    {\r\n                        \"fwd\": \"10.1.1.1\"\r\n                    }\r\n                ]\r\n            }\r\n\t\t],\r\n        \"static\": {}\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/ip/route",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"ip",
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/ip/route",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ned:route\": {\r\n        \"ip-route-interface-forwarding-list\": [\r\n            {\r\n                \"prefix\": \"216.48.1.0\",\r\n                \"mask\": \"255.255.255.0\",\r\n                \"fwd-list\": [\r\n                    {\r\n                        \"fwd\": \"10.1.1.1\"\r\n                    }\r\n                ]\r\n            },\r\n\t\t]\r\n        \"static\": {}\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/ip/route",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"ip",
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/ip/route",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ned:route\": {\r\n        \"ip-route-interface-forwarding-list\": [\r\n            {\r\n                \"prefix\": \"216.48.1.0\",\r\n                \"mask\": \"255.255.255.0\",\r\n                \"fwd-list\": [\r\n                    {\r\n                        \"fwd\": \"10.1.1.1\"\r\n                    }\r\n                ]\r\n            },\r\n        \"static\": {}\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/ip/route",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"ip",
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/ip/route",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"route\": {\r\n        \"ip-route-interface-forwarding-list\": [\r\n            {\r\n                \"prefix\": \"216.48.1.0\",\r\n                \"mask\": \"255.255.255.0\"\r\n            }\r\n                \"fwd-list\": [\r\n                    {\r\n                        \"fwd\": \"200.0.0.0\"\r\n                    }\r\n                ]\r\n         ],\r\n        \"static\": {}\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/ip/route",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"ip",
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/ip/route?deep",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/ip/route?deep",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"ip",
+						"route"
+					],
+					"query": [
+						{
+							"key": "deep",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/route?deep",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/route?deep",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"route"
+					],
+					"query": [
+						{
+							"key": "deep",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface?deep",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface?deep",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface"
+					],
+					"query": [
+						{
+							"key": "deep",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/ip/route",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"route\": {\r\n        \"ip-route-interface-forwarding-list\": [\r\n            {\r\n                \"prefix\": \"216.48.1.0\",\r\n                \"mask\": \"255.255.255.0\"\r\n            }\r\n        ],\r\n        \"static\": {}\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/ip/route",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"ip",
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/ip/route",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"route\": {\r\n        \"ip-route-interface-forwarding-list\": [\r\n            {\r\n                \"prefix\": \"216.48.1.0\",\r\n                \"mask\": \"255.255.255.0\"\r\n            }\r\n        ],\r\n        \"static\": {}\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/ip/route",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"ip",
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"route\": {\r\n        \"ip-route-interface-forwarding-list\": [\r\n            {\r\n                \"prefix\": \"216.48.1.0\",\r\n                \"mask\": \"255.255.255.0\"\r\n            }\r\n        ],\r\n        \"static\": {}\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/route",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 100,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"150.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/route",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 100,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"150.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 100,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"150.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.100//api/objects/networkobjects",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "enable_1",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"warning": "",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"warning": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"host\": {\r\n    \"kind\": \"IPv4Address\",\r\n    \"value\": \"10.1.1.1\"\r\n  },\r\n  \"kind\": \"object#NetworkObj\",\r\n  \"name\": \"ASA_Demo_NObj_1190\",\r\n  \"objectId\": \"ASA_Demo_NObj_1190\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.10.100//api/objects/networkobjects",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"100"
+					],
+					"path": [
+						"",
+						"api",
+						"objects",
+						"networkobjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.100//api/objects/networkobjects",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "enable_1",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"host\": {\r\n    \"kind\": \"IPv4Address\",\r\n    \"value\": \"10.1.1.1\"\r\n  },\r\n  \"kind\": \"object#NetworkObj\",\r\n  \"name\": \"ASA_Demo_NObj_1190\",\r\n  \"objectId\": \"ASA_Demo_NObj_1190\"\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.10.100//api/objects/networkobjects",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"100"
+					],
+					"path": [
+						"",
+						"api",
+						"objects",
+						"networkobjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.100//api/objects/networkobjects",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "enable_1",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 200,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"160.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.10.100//api/objects/networkobjects",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"100"
+					],
+					"path": [
+						"",
+						"api",
+						"objects",
+						"networkobjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.100/api/interfaces/physical",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "enable_1",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 200,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"160.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.10.100/api/interfaces/physical",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"100"
+					],
+					"path": [
+						"api",
+						"interfaces",
+						"physical"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://192.168.10.100/api/interfaces/physical",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 200,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"160.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "https://192.168.10.100/api/interfaces/physical",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"100"
+					],
+					"path": [
+						"api",
+						"interfaces",
+						"physical"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/200",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 200,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"160.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/200",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"200"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/200",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 200,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"160.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/200",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"200"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/300",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 300,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"160.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/300",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"300"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/300",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 300,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"160.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/300",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"300"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/200",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 200,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"160.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/200",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"200"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/200",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 100,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"160.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/200",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"200"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 100,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"150.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ned:Loopback\": {\r\n\t\t\"name\": 100,\r\n\t\t\"ip\": {\r\n\t\t\t\"address\": {\r\n\t\t\t\t\"primary\": {\r\n\t\t\t\t\t\"address\": \"150.99.1.1\",\r\n\t\t\t\t\t\"mask\": \"255.255.255.0\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/loopback/100",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/loopback/100",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"loopback",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/Loopback/100",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"Loopback",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/GigabitEthernet/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/GigabitEthernet/1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"GigabitEthernet",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/GigabitEthernet/4?deep",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/GigabitEthernet/4?deep",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"GigabitEthernet",
+						"4"
+					],
+					"query": [
+						{
+							"key": "deep",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface/GigabitEthernet/4",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface/GigabitEthernet/4",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface",
+						"GigabitEthernet",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface?deep",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface?deep",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface"
+					],
+					"query": [
+						{
+							"key": "deep",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restcon/api/config/native/interface?deep",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restcon/api/config/native/interface?deep",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restcon",
+						"api",
+						"config",
+						"native",
+						"interface"
+					],
+					"query": [
+						{
+							"key": "deep",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface?deep",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface?deep",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface"
+					],
+					"query": [
+						{
+							"key": "deep",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native/interface",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native/interface",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native",
+						"interface"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native?deep",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native?deep",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native"
+					],
+					"query": [
+						{
+							"key": "deep",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.yang.data+json",
+						"disabled": false
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.10.80/restconf/api/config/native",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.10.80/restconf/api/config/native",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"80"
+					],
+					"path": [
+						"restconf",
+						"api",
+						"config",
+						"native"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
