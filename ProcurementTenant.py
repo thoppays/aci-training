@@ -37,3 +37,5 @@ tenants = rsp_dict['imdata']
 
 for tenant in tenants:
 	print tenant['fvTenant']['attributes']['name']
+
+

@@ -1,0 +1,57 @@
+[------------- Sending Request to Server ------------
+
+<configResolveClass
+cookie="1541770998/603c4b55-338c-4e6f-add0-762ab4b3c983"
+classId="fabricVlanReq"
+inHierarchical="false">
+    <inFilter>
+<eq class="fabricVlanReq" property="name" value=""/>
+    </inFilter>
+</configResolveClass>
+
+<configResolveClass
+cookie="1541770998/603c4b55-338c-4e6f-add0-762ab4b3c983"
+classId="fabricOrgVlanPolicy"
+inHierarchical="false">
+    <inFilter>
+    </inFilter>
+</configResolveClass>
+
+<configResolveClass
+cookie="1541770998/603c4b55-338c-4e6f-add0-762ab4b3c983"
+classId="fabricVlan"
+inHierarchical="false">
+    <inFilter>
+<or>
+    <and>
+        <eq class="fabricVlan" property="name" value="financex"/>
+        <eq class="fabricVlan" property="switchId" value="dual"/>
+</and>
+</or>
+    </inFilter>
+</configResolveClass>
+
+<configConfMos
+cookie="1541770998/603c4b55-338c-4e6f-add0-762ab4b3c983"
+inHierarchical="false">
+    <inConfigs>
+<pair key="fabric/lan/net-financex">
+    <fabricVlan
+    compressionType="included"
+    defaultNet="no"
+    id="111"
+    mcastPolicyName=""
+    name="financex"
+    policyOwner="local"
+    pubNwName=""
+    sharing="none"
+    dn="fabric/lan/net-financex"
+    
+    status="created"
+    
+    sacl="addchild,del,mod">
+    </fabricVlan>
+</pair>
+    </inConfigs>
+</configConfMos>
+-----------------------------------------------------]
